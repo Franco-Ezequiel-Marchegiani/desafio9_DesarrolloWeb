@@ -1,0 +1,2307 @@
+/*** Tipografía/Fuente ***/
+html{
+    font-size: 100%;
+}
+ *{
+     text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+} 
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* Carrusel */
+
+
+/* Fondo Colores */
+
+body{
+    background: #dfdfdf;
+}
+
+/*** Header ***/
+
+header li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+header a{
+    font-size: 18px;
+}
+
+.nav-link{
+    padding: 5px;
+    margin: 10px;
+}
+/*** Logo Header ***/
+
+
+
+/*** Home ***/
+/*** NavBar ***/
+
+/*** Fin NavBar ***/
+
+.bodyHome{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "footer"
+}
+
+.tituloHome{
+    text-align: center;
+    text-decoration: none;
+}
+
+.linkHome{
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(to left,rgb(18, 22, 255), rgb(255, 25, 25));
+    -webkit-background-clip: text;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+
+ .linkHome:hover{
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(to left,rgb(147, 148, 255), rgb(255, 111, 111));
+    -webkit-background-clip: text;
+}
+
+
+.home {
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+    grid-area: banner;
+}
+
+.home img{
+    width: 75%;
+    height: 75%;
+    padding: 10px;
+}
+
+
+
+/*** Discografía ***/
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+/*** Fin NavBar ***/
+.discos{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card{
+    margin-bottom: 50px;
+    animation:fadeInUp;
+    animation-duration: 1.5s;
+}
+
+.tituloDiscos {
+    text-align: center;
+}
+
+.tituloDiscos h1{
+    font-size: 36px;
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(to left, rgb(18, 22, 255), rgb(255, 25, 25), rgb(18, 22, 255), rgb(255, 75, 75));
+    -webkit-background-clip: text;
+}
+
+.tituloDiscos h2{
+    font-size: 24px;
+    animation:fadeInDown;
+    animation-duration: 1.5s;
+}
+
+.discos img{
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.discos img:hover{
+    transform: scale(1.01,1.01);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/*** Historia ***/
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+
+/*** Fin NavBar ***/
+
+/*** GRID ***/
+
+/*** GRID Header***/
+
+/*** GRID Header Fin ***/
+
+/*** Grid Footer ***/
+
+footer{
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgb(105, 97, 255) 0%, rgb(202, 60, 60) 100%);
+    display: grid;
+    grid-template-areas: 
+    "descripcion bowie misRedes" ;
+    grid-template-rows:  1fr;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    
+}
+
+footer p{
+    font-size: 20px;
+    padding-top: 20px;
+
+}
+
+
+
+.descripcionFooter{
+    grid-area: descripcion;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 10px;
+  color: black;
+}
+
+.descripcionFooter img{
+    width: auto;
+    align-self: center;
+    padding-top: 20px;
+}
+
+.redesBowie{
+    text-align: center;
+    grid-area: bowie;
+    font-size: 100px;
+    align-self: center;
+    
+}
+
+.redesBowie p{
+    font-size: 40px;
+    color: black;
+}
+
+.misRedes{
+    text-align: center;
+    grid-area: misRedes;
+    font-size: 100px;
+    align-self: center;
+}
+
+.misRedes p{
+    font-size: 40px;
+}
+
+
+/*** Grid Footer Fin ***/
+
+/*** GRID Historia  ***/
+
+.comienzoHistoria{
+    
+    display: grid;
+    grid-template-areas: "img aside"
+                         "p aside";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto;  
+}
+
+.comienzoHistoria p{
+    grid-area: p;
+    align-self: center;
+    margin: 50px;
+}
+
+.comienzoHistoria a {
+    grid-area: img;
+    align-self: center;
+    margin: 20px;
+
+}
+
+.comienzoHistoria aside{
+    grid-area: aside;
+    align-self: center;
+    margin: 50px;
+}
+
+
+
+ .ziggyStardustHistoria{
+    display: grid;
+    grid-template-areas: "texto imagen"
+                         "texto imagen" ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto ;
+}
+
+.ziggyStardustHistoria a {
+    grid-area: imagen;
+    align-self: center;
+    margin: 30px;
+}
+
+.ziggyStardustHistoria p {
+    grid-area: texto;
+    align-self: center;
+    margin: 40px;
+} 
+
+
+.epocaOscuraHistoria{
+    display: grid;
+    grid-template-areas: 
+    "foto muchoTexto"
+    "foto muchoTexto";
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: auto 70% ;
+}
+
+.epocaOscuraHistoria a {
+    grid-area: foto;
+    align-self: center;
+    margin: 30px;
+}
+
+.epocaOscuraHistoria p {
+    grid-area: muchoTexto;
+    align-self: center;
+    margin: 50px;
+}
+
+
+.renacimientoHistoria {
+    display: grid;
+    grid-template-areas: 
+    "texto foto"
+    "texto foto";
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr auto;
+}
+
+.renacimientoHistoria a{
+    grid-area: foto;
+    align-self: center;
+    margin: 30px;
+}
+
+.renacimientoHistoria p {
+    grid-area: texto;
+    align-self: center;
+    margin: 50px;
+}
+
+
+.finDelCamino{
+    display: grid;
+    grid-template-areas:
+    "video texto"
+    "video texto";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto;
+}
+
+.finDelCamino a{
+    grid-area: video;
+    align-self: center;
+    margin: 30px;
+}
+
+.finDelCamino p{
+    grid-area: texto;
+    align-self: center;
+    margin: 50px;
+}
+
+/*** GRID Historia Fin ***/
+
+
+/*** FIN GRID ***/
+
+/*** Titulos Historia ***/
+.tituloHistoria{
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(to left, rgb(18, 22, 255), rgb(255, 25, 25), rgb(18, 22, 255), rgb(255, 75, 75));
+    -webkit-background-clip: text;
+}
+
+.subTituloHistoria{
+    font-size: 32px;
+    padding: 40px;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+}
+
+.subtituloZiggyHistoria{
+    font-size: 32px;
+    padding: 40px;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+}
+
+.subtituloEpocaOscuraHistoria{
+    font-size: 32px;
+    padding: 40px;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+}
+
+.subtituloRenacimientoHistoria{
+    font-size: 32px;
+    padding: 40px;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+}
+
+.subtituloFinCaminoHistoria{
+    font-size: 32px;
+    padding: 40px;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+
+}
+
+/*** Titulos Historia Fin***/
+
+/*** Barra Historia ***/
+
+.barraHistoria{
+    margin: 10px;
+    margin-top: 50px;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,55,96,1) 100%);
+    padding: 40px;
+}
+
+.nav.justify-content-center{
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 50px;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,55,96,1) 100%);
+    
+}
+
+.nav-item{
+    justify-content: center;
+    align-self: center;
+}
+
+/*** Barra Historia Fin***/
+
+
+/*** David Bowie Historia Comienzo ***/
+
+  
+
+.historiaBowieTexto{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+
+.comienzoHistoria p{
+    margin: 10px;
+}    
+
+.comienzoHistoria img{
+    height: 500px;
+    margin: 5px 20px;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+}
+
+.bonusHistoria p {
+    width: 620px;
+    animation: fadeInRightBig;
+    animation-duration: 2s;
+}
+.bonusHistoria img{
+    width: 600px;
+    height: 800px;
+    animation: fadeInRightBig;
+    animation-duration: 2s;
+}
+
+/*** David Bowie Historia Comienzo Fin***/
+
+/*** Ziggy Historia Comienzo ***/
+
+.ziggyStardustHistoria p{
+    display: inline-block;
+    overflow: hidden;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+}
+
+.ziggyStardustHistoria img{
+    width: 500px;
+    animation: fadeInRightBig;
+    animation-duration: 2s;
+}
+
+/*** Ziggy Historia  Fin***/
+
+/*** Epoca Oscura Historia Comienzo ***/
+.epocaOscuraHistoria img{
+    width: 400px;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+}
+
+.epocaOscuraHistoria p {
+    width: 85%;
+    animation: fadeInRightBig;
+    animation-duration: 2s;
+}
+
+/*** Epoca Oscura Historia  Fin***/
+
+/*** Renacimiento Historia Comienzo ***/
+.renacimientoHistoria img{
+    width: 500px;
+    animation: fadeInRightBig;
+    animation-duration: 2s;
+}
+
+.renacimientoHistoria p {
+    display: inline-block;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+}
+/*** Renacimiento Historia Fin ***/
+
+/*** Fin del Camino Historia ***/
+
+.finDelCamino img{
+    width: 900px;
+    animation: fadeInLeftBig;
+    animation-duration: 2s;
+}
+
+.finDelCamino p {
+    display: inline-block;
+    animation: fadeInRightBig;
+    animation-duration: 2s;
+}
+/*** Fin del Camino Historia Fin***/
+
+/*** Makeup ***/
+
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+/*** Fin NavBar ***/
+
+.tituloMakeUp{
+    color: #888888;
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(to left, rgb(18, 22, 255), rgb(255, 25, 25), rgb(18, 22, 255), rgb(255, 75, 75));
+    -webkit-background-clip: text;
+}
+
+.makeups{
+    text-align: center;
+}
+
+.makeupZiggy{
+    color: rgb(223, 45, 131);
+}
+
+.makeupZiggy img{
+    width: 600px;
+    height: 700px;
+    margin: 5px;
+    border: solid 3px rgb(226, 73, 75);
+}
+
+.makeupAladdin{
+    color: rgb(226, 73, 75);
+}
+
+.makeupAladdin img{
+    width: 600px;
+    height: 600px;
+    margin: 5px;
+    border: solid 3px rgb(172, 163, 163);
+}
+
+.makeupScaryMonsters{
+    color: rgb(165, 168, 178);
+}
+
+.makeupScaryMonsters img{
+    width: 600px;
+    height: 600px;
+    margin: 5px;
+    border: solid 3px rgb(165, 168, 178);
+}
+
+.makeupLabyrinth{
+    color: rgb(146, 96, 71);
+}
+
+.makeupLabyrinth img{
+    width: 600px;
+    height: 500px;
+    margin: 5px;
+    border: solid 3px rgb(146, 96, 71);
+}
+
+.makeupHunkyDory{
+    color: rgb(186, 212, 229);
+}
+
+.makeupHunkyDory img{
+    width: 600px;
+    height: 600px;
+    margin: 5px;
+    border: solid 3px rgb(186, 212, 229);
+}
+
+
+/*** Vestimentas ***/
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+/*** Fin NavBar ***/
+
+.tituloVestimenta{
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.vestimentas{
+    text-align: center;
+}
+
+.vestimentas h1{
+    color: #505050;
+    color: transparent;
+    background: linear-gradient(to left, rgb(18, 22, 255), rgb(255, 25, 25), rgb(18, 22, 255), rgb(255, 75, 75));
+    -webkit-background-clip: text;
+}
+
+.vestimentasHunkyDory{
+    color: rgb(186, 212, 229);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.vestimentasZiggy{
+    color: rgb(215, 50, 44);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.vestimentasZiggy img{
+    width: 900px;
+    height: 1200px;
+    border: 5px solid rgb(215, 50, 44);
+    margin: 10px;
+}
+
+.vestimentasDiamondDogs{
+    color: rgb(50, 100, 187);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.vestimentasDiamondDogs img{
+    width: 900px;
+    height: 1200px;
+    border: 5px solid rgb(50, 100, 187);
+    margin: 10px;
+}
+
+.vestimentasStationToStation{
+    color: #888888;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.vestimentasStationToStation img{
+    width: 900px;
+    height: 1200px;
+    border: 5px solid #888888;
+    margin: 10px;
+}
+
+.vestimentasUnionJacket{
+    color: rgb(180, 1, 20);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.vestimentasUnionJacket img{
+    width: 900px;
+    height: 1200px;
+    border: 5px solid rgb(180, 1, 20);
+    margin: 10px;
+}
+
+/*** Contacto ***/
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+/*** Fin NavBar ***/
+
+.contacto{
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.contacto h1{
+    color: transparent;
+    background: linear-gradient(to left, rgb(18, 22, 255), rgb(255, 25, 25), rgb(18, 22, 255), rgb(255, 75, 75));
+    -webkit-background-clip: text;
+}
+
+.contacto img{
+    margin-bottom: 20px;
+    animation: fadeIn;
+    animation-duration: 4.5s;
+}
+
+.contacto img:hover {
+    transform: scale(1.01,1.01);
+}
+
+/*** Adaptación Mobile ***/
+
+@media only screen and (max-width:320px)
+{
+    /*** Home Mobile 320px  ***/
+    
+
+    section.home{
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "banner";
+    }
+
+
+    
+    .headerHome {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    .home img{
+        margin: 0;
+        padding: 0;
+    }
+
+    .bodyHome{
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        font-size:0 ;
+    }
+    li {
+        display: inline-block;
+        width: 70%;
+        position:relative;
+        font-size: 24px;
+    }
+    
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    
+    ul ul li {
+        display: block;
+    }
+    
+    ul li:hover ul {
+        display: block;
+    }
+
+
+    /*** Discografía Mobile 320px ***/
+
+    .discos{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "link"
+        "subtitulo"
+        ;
+        grid-template-rows: 1fr ;
+        grid-template-columns: 100% ;
+    }
+
+    .discos h2{
+        grid-area: titulo ;
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    .discos a{
+        grid-area: link ;
+        width: 100%;
+    }
+
+    .discos h3{
+        grid-area: subtitulo ;
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .discos img{
+        width: 60%;
+        height: 60%;
+    }
+    /*** Discografía Mobile 320px Fin ***/
+
+    /*** Historia Mobile 320px  ***/
+
+    .bodyHistoria h2{
+        text-align: center;
+        margin: 5px;
+    }
+        /* Bowie */
+    .comienzoHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto"
+        "aside";
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+    }
+
+    .comienzoHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .comienzoHistoria p{
+        grid-area: texto;
+    }
+
+    .comienzoHistoria aside{
+        grid-area: aside;
+        align-self: center;
+        
+    }
+
+    .comienzoHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px ;
+        border: solid 5px;
+    }
+
+    .bonusHistoria p {
+        width: 100%;
+    
+    }
+    
+    
+        /* Ziggy */
+    .ziggyStardustHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .ziggyStardustHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .ziggyStardustHistoria p{
+        grid-area: texto;
+        align-self: center;
+    }
+
+    .ziggyStardustHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+    
+
+
+        /* Epoca Oscura */
+    .epocaOscuraHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+    }
+
+    .epocaOscuraHistoria p {
+        grid-area: texto;
+        align-self: center;
+    }
+
+    .epocaOscuraHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .epocaOscuraHistoria img{
+        width: 250px;
+        height: 100%;
+        margin: 5px;
+    }
+
+        /* Renacimiento */
+    .renacimientoHistoria{
+        display: grid;
+        grid-template-areas: 
+        "foto"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .renacimientoHistoria a{
+        grid-area: foto;
+        align-self: center;
+    }
+
+    .renacimientoHistoria p{
+        grid-area: texto;
+        align-self: center;
+    }
+
+    .renacimientoHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+
+    .renacimientoHistoria p {
+        display: inline-block;
+        margin: 5px;
+    }
+
+
+       /* Fin del Camino */
+    .finDelCamino{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .finDelCamino a{
+        grid-area: imagen;
+    }
+
+    .finDelCamino p{
+        grid-area: texto;
+    }
+
+    .finDelCamino img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .finDelCamino p {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    /*** Historia Mobile 320px  Fin ***/
+
+    /*** Vestimentas Mobile 320px  ***/
+
+    /*** Vestimentas Mobile 320px Fin ***/
+
+
+    /*** Makeup Mobile 320px  ***/
+
+
+    /*** Makeup Mobile 320px Fin ***/
+
+
+    /*** Contacto Mobile 320px  ***/
+    .contacto{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "video"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .contacto h1{
+        grid-area: titulo;
+    }
+
+    .contacto a{
+        grid-area:video
+    }
+
+    .contacto p {
+        grid-area:texto
+    }
+
+    .contacto img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*** Contacto Mobile 320px Fin ***/
+
+    /*** Footer Mobile Home 320px ***/
+
+    footer{
+        grid-template-areas:  
+        "descripcion" 
+        "bowie" 
+        "misRedes";
+        grid-template-rows:  1fr;
+        grid-template-columns: 1fr  ;
+        
+    }
+    
+    footer p{
+        font-size: 14px;
+        padding-top: 20px;
+    
+    }
+    
+    footer a{
+        padding-left: 50px;
+    }
+    
+    .descripcionFooter{
+        grid-area: descripcion;
+        align-self: center;
+        text-align: center;
+        padding-bottom: 10px;
+      color: black;
+    }
+    
+    .descripcionFooter img{
+        width: 30%;
+        align-self: center;
+        padding-top: 20px;
+    }
+    
+    .redesBowie{
+        text-align: center;
+        grid-area: bowie;
+        font-size: 40px;
+        align-self: center;
+        
+    }
+    
+    .redesBowie p{
+        font-size: 24px;
+    }
+    
+    .misRedes{
+        text-align: center;
+        grid-area: misRedes;
+        font-size: 40px;
+        align-self: center;
+    }
+    
+    .misRedes p{
+        font-size: 24px;
+    }
+
+    /*** Footer Mobile 320px Fin***/
+
+    /*** Footer Mobile 320px Fin***/
+}
+
+
+@media only screen and (min-width:321px) and (max-width: 599px)
+{
+        /*** Home ***/
+    header{
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "barra";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header .logoHeader{
+        grid-area: logo;
+        align-self: center;
+    }
+
+    header nav{
+        grid-area: barra;
+        align-self: center;
+        margin: 5px;
+    }
+
+    .home{
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "footer"
+    }
+    
+    .headerHome {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logoHeader{
+        width: 100%;
+        height: 100%;
+    }
+
+    .bodyHome img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .home img{
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        font-size:0 ;
+    }
+    li {
+        display: inline-block;
+        width: 70%;
+        position:relative;
+        font-size: 24px;
+    }
+    
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    
+    ul ul li {
+        display: block;
+    }
+    
+    ul li:hover ul {
+        display: block;
+    }
+
+    /*** Home Fin ***/
+
+    /*** Discografía ***/
+
+    .discos{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "link"
+        "subtitulo";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .discos h2{
+        grid-area: titulo ;
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .discos a{
+        grid-area: link ;
+        width: 100%;
+    }
+
+    .discos h3{
+        grid-area: subtitulo ;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .discos img{
+        width: 70%;
+        height: 70%;
+    }
+    /*** Discografía fin ***/
+
+    /*** Historia ***/
+
+    /* Bowie */
+    .bodyHistoria h2{
+        text-align: center;
+        margin: 5px;       
+    }
+
+    .comienzoHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto"
+        "aside";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .comienzoHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .comienzoHistoria p{
+        grid-area: texto;
+    }
+
+    .comienzoHistoria aside{
+        grid-area: aside;
+        align-self: center;
+    }
+
+    .comienzoHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px ;
+        border: solid 5px;
+    }
+
+    .bonusHistoria p {
+        width: 100%;
+    
+    }
+
+
+    /* Ziggy */
+    .ziggyStardustHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .ziggyStardustHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .ziggyStardustHistoria p{
+        grid-area: texto;
+        align-self: center;
+    }
+
+    .ziggyStardustHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+
+    /* Epoca Oscura */
+    .epocaOscuraHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+    }
+
+    .epocaOscuraHistoria p {
+        grid-area: texto;
+        align-self: center;
+        width: 100%;
+    }
+
+    .epocaOscuraHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .epocaOscuraHistoria img{
+        width: 130%;
+        height: 100%;
+        margin: 5px;
+    }
+
+        /* Renacimiento */
+    .renacimientoHistoria{
+        display: grid;
+        grid-template-areas: 
+        "foto"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .renacimientoHistoria a{
+        grid-area: foto;
+        align-self: center;
+    }
+
+    .renacimientoHistoria p{
+        grid-area: texto;
+        align-self: center;
+    }
+
+    .renacimientoHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+
+    .renacimientoHistoria p {
+        display: inline-block;
+        margin: 5px;
+    }
+
+
+       /* Fin del Camino */
+    .finDelCamino{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .finDelCamino a{
+        grid-area: imagen;
+    }
+
+    .finDelCamino p{
+        grid-area: texto;
+    }
+
+    .finDelCamino img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .finDelCamino p {
+        display: inline-block;
+        margin: 5px;
+        margin-bottom: 30px;
+    }
+    /*** Historia Fin ***/
+
+
+    /*** Vestimenta ***/
+    /*** Vestimenta Fin ***/
+
+
+    /*** Makeup ***/
+    /*** Makeup Fin ***/
+
+
+    /*** Contacto ***/
+
+    .contacto{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "video"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .contacto h1{
+        grid-area: titulo;
+    }
+
+    .contacto a{
+        grid-area:video
+    }
+
+    .contacto p {
+        grid-area:texto
+    }
+
+    .contacto img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*** Contacto Fin ***/
+
+    /*** Footer Mobile 600px ***/
+
+    footer{
+        grid-template-areas:  "descripcion" 
+                              "bowie" 
+                              "misRedes" ;
+        grid-template-rows:  1fr;
+        grid-template-columns: 1fr  ;
+        
+    }
+    
+    footer p{
+        font-size: 16px;
+        padding-top: 20px;
+    
+    }
+    
+    footer a{
+        padding-left: 50px;
+    }
+    
+    .descripcionFooter{
+        grid-area: descripcion;
+        align-self: center;
+        text-align: center;
+        padding-bottom: 10px;
+      color: black;
+    }
+    
+    .descripcionFooter img{
+        width: 50%;
+        align-self: center;
+        padding-top: 20px;
+    }
+    
+    .redesBowie{
+        text-align: center;
+        grid-area: bowie;
+        font-size: 60px;
+        align-self: center;
+        
+    }
+    
+    .redesBowie p{
+        font-size: 28px;
+    }
+    
+    .misRedes{
+        text-align: center;
+        grid-area: misRedes;
+        font-size: 60px;
+        align-self: center;
+    }
+    
+    .misRedes p{
+        font-size: 28px;
+    }
+
+    /*** Footer Mobile 600px Fin***/
+
+}
+
+/*** Adaptación Tablet ***/
+@media only screen and (min-width:600px) and (max-width:768px) {
+    
+    header{
+        display: grid;
+        grid-template-areas: 
+        "logo barra"
+        "logo barra"
+        ;
+        grid-template-rows:  1fr 1fr;
+        grid-template-columns: auto  1fr;
+    }
+
+    header .logoHeader{
+        grid-area: logo;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    header nav{
+        grid-area: barra;
+        align-self: center;
+        margin: 5px;
+        display: inline;
+    }
+    
+    .home{
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "footer";
+    }
+    .bodyHome img{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .logoHeader{
+        width: 30%;
+        height: 30%;
+        
+    }
+
+    .home img{
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        font-size:0 ;
+    }
+    li {
+        display: inline-block;
+        width: 100%;
+        position:relative;
+        font-size: 24px;
+    }
+    
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    
+    ul ul li {
+        display: block;
+    }
+    
+    ul li:hover ul {
+        display: block;
+    }
+
+    /*** Discografía ***/
+
+    .discos{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "link"
+        "subtitulo";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .discos h2{
+        grid-area: titulo ;
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .discos a{
+        grid-area: link ;
+        width: 100%;
+    }
+
+    .discos h3{
+        grid-area: subtitulo ;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .discos img{
+        width: 70%;
+        height: 70%;
+    }
+    /*** Discografía fin ***/
+
+    /*** Historia ***/
+
+    /* Bowie */
+    .bodyHistoria h2{
+        text-align: center;
+        margin: 5px;       
+    }
+
+    .comienzoHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto"
+        "aside";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .comienzoHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .comienzoHistoria p{
+        grid-area: texto;
+    }
+
+    .comienzoHistoria aside{
+        grid-area: aside;
+        align-self: center;
+    }
+
+    .comienzoHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px ;
+        border: solid 5px;
+    }
+
+    .bonusHistoria p {
+        width: 100%;
+    
+    }
+
+
+    /* Ziggy */
+    .ziggyStardustHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .ziggyStardustHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .ziggyStardustHistoria p{
+        grid-area: texto;
+        align-self: center;
+    }
+
+    .ziggyStardustHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+
+    /* Epoca Oscura */
+    .epocaOscuraHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+    }
+
+    .epocaOscuraHistoria p {
+        grid-area: texto;
+        align-self: center;
+    }
+
+    .epocaOscuraHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .epocaOscuraHistoria img{
+        width: 550px;
+        height: 100%;
+        margin: 5px;
+    }
+
+        /* Renacimiento */
+    .renacimientoHistoria{
+        display: grid;
+        grid-template-areas: 
+        "foto"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .renacimientoHistoria a{
+        grid-area: foto;
+        align-self: center;
+    }
+
+    .renacimientoHistoria p{
+        grid-area: texto;
+        align-self: center;
+    }
+
+    .renacimientoHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+
+    .renacimientoHistoria p {
+        display: inline-block;
+        margin: 5px;
+    }
+
+
+       /* Fin del Camino */
+    .finDelCamino{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .finDelCamino a{
+        grid-area: imagen;
+    }
+
+    .finDelCamino p{
+        grid-area: texto;
+    }
+
+    .finDelCamino img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .finDelCamino p {
+        display: inline-block;
+        margin: 5px;
+        margin-bottom: 30px;
+    }
+    /*** Historia Fin ***/
+
+
+    /*** Vestimenta ***/
+    /*** Vestimenta Fin ***/
+
+
+    /*** Makeup ***/
+    /*** Makeup Fin ***/
+
+
+    /*** Contacto ***/
+
+    .contacto{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "video"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .contacto h1{
+        grid-area: titulo;
+    }
+
+    .contacto a{
+        grid-area:video
+    }
+
+    .contacto p {
+        grid-area:texto
+    }
+
+    .contacto img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*** Contacto Fin ***/
+
+    /*** Footer ***/
+    footer{
+        grid-template-areas:  "descripcion" 
+                              "bowie" 
+                              "misRedes" ;
+        grid-template-rows:  1fr;
+        grid-template-columns: 1fr  ;
+        
+    }
+    
+    footer p{
+        font-size: 18px;
+        padding-top: 20px;
+    
+    }
+    
+    footer a{
+        padding-left: 50px;
+    }
+    
+    .descripcionFooter{
+        grid-area: descripcion;
+        align-self: center;
+        text-align: center;
+        padding-bottom: 10px;
+      color: black;
+    }
+    
+    .descripcionFooter img{
+        width: auto;
+        align-self: center;
+        padding-top: 20px;
+    }
+    
+    .redesBowie{
+        text-align: center;
+        grid-area: bowie;
+        font-size: 60px;
+        align-self: center;
+        
+    }
+    
+    .redesBowie p{
+        font-size: 28px;
+    }
+    
+    .misRedes{
+        text-align: center;
+        grid-area: misRedes;
+        font-size: 60px;
+        align-self: center;
+    }
+    
+    .misRedes p{
+        font-size: 28px;
+    }
+
+    /*** Footer Fin ***/
+}
+
+@media only screen and (min-width:769px) and (max-width:1300px) {
+
+    header{
+        background: rgb(199, 54, 54);
+    background: linear-gradient(0deg, rgb(190, 50, 50) 0%, rgb(85, 77, 255) 100%);
+        display: grid;
+        grid-template-areas: "img ul";
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+    
+    
+    ul{
+        grid-area: ul;
+        text-align: center;
+    }
+    
+    
+    
+    div.logoHeader img {
+        grid-area: img;
+        align-self: center;
+        max-width: 200px;
+        justify-content: start;
+    }
+
+    header{
+        display: grid;
+        grid-template-areas: 
+        "logo barra"
+        "logo barra"
+        ;
+        grid-template-rows:  1fr 1fr;
+        grid-template-columns: auto  1fr;
+    }
+
+    header .logoHeader{
+        grid-area: logo;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    header ul li{
+        grid-area: barra;
+        align-self: center;
+        margin: 5px;
+        display: inline;
+    }
+    
+    .home{
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "footer";
+    }
+    .bodyHome img{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .logoHeader{
+        width: 30%;
+        height: 30%;
+        
+    }
+
+    .home img{
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        font-size:0 ;
+    }
+    li {
+        display: inline-block;
+        width: 100%;
+        position:relative;
+        font-size: 24px;
+    }
+    
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    
+    ul ul li {
+        display: block;
+    }
+    
+    ul li:hover ul {
+        display: block;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    /*** Discografía ***/
+
+    .tituloDiscos h1{
+        font-size: 30px;
+    }
+    
+    
+    
+    .tituloDiscos h2{
+        font-size: 26px;
+    }
+    
+    .discos img{
+        width: 500px;
+        height: 500px;
+        margin: 20px;
+        border: 1px solid;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .discos img:hover{
+        transform: scale(1.01,1.01);
+        border: 1px solid rgb(0, 0, 0);
+    }
+    /*** Discografía fin ***/
+
+    /*** Historia ***/
+
+    /* Bowie */
+    .bodyHistoria h2{
+        text-align: center;
+        margin: 5px;       
+    }
+
+    .comienzoHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto"
+        "aside";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .comienzoHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .comienzoHistoria p{
+        grid-area: texto;
+    }
+
+    .comienzoHistoria aside{
+        grid-area: aside;
+        align-self: center;
+    }
+
+    .comienzoHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px ;
+        border: solid 5px;
+    }
+
+    .bonusHistoria p {
+        width: 100%;
+    
+    }
+
+
+    /* Ziggy */
+    .ziggyStardustHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .ziggyStardustHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .ziggyStardustHistoria p{
+        grid-area: texto;
+        align-self: center;
+    }
+
+    .ziggyStardustHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+
+    /* Epoca Oscura */
+    .epocaOscuraHistoria{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+    }
+
+    .epocaOscuraHistoria p {
+        grid-area: texto;
+        align-self: center;
+        width: 95%;
+    }
+
+    .epocaOscuraHistoria a{
+        grid-area: imagen;
+        align-self: center;
+    }
+
+    .epocaOscuraHistoria img{
+        width: 550px;
+        height: 100%;
+    }
+
+        /* Renacimiento */
+    .renacimientoHistoria{
+        display: grid;
+        grid-template-areas: 
+        "foto"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .renacimientoHistoria a{
+        grid-area: foto;
+        align-self: center;
+    }
+
+    .renacimientoHistoria p{
+        grid-area: texto;
+        align-self: center;
+    }
+
+    .renacimientoHistoria img{
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+
+    .renacimientoHistoria p {
+        display: inline-block;
+        margin: 5px;
+    }
+
+
+       /* Fin del Camino */
+    .finDelCamino{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .finDelCamino a{
+        grid-area: imagen;
+    }
+
+    .finDelCamino p{
+        grid-area: texto;
+    }
+
+    .finDelCamino img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .finDelCamino p {
+        display: inline-block;
+        margin: 5px;
+        margin-bottom: 30px;
+    }
+    /*** Historia Fin ***/
+
+
+    /*** Vestimenta ***/
+    /*** Vestimenta Fin ***/
+
+
+    /*** Makeup ***/
+    /*** Makeup Fin ***/
+
+
+    /*** Contacto ***/
+
+    .contacto{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "video"
+        "texto";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .contacto h1{
+        grid-area: titulo;
+    }
+
+    .contacto a{
+        grid-area:video
+    }
+
+    .contacto p {
+        grid-area:texto
+    }
+
+    .contacto img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*** Contacto Fin ***/
+
+    /*** Footer ***/
+    footer{
+        grid-template-areas:  "descripcion bowie misRedes" ;
+        grid-template-rows:  1fr;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        
+    }
+    
+    footer p{
+        font-size: 20px;
+        padding-top: 20px;
+    
+    }
+    
+    footer a{
+        padding-left: 50px;
+    }
+    
+    .descripcionFooter{
+        grid-area: descripcion;
+        align-self: center;
+        text-align: center;
+        padding-bottom: 10px;
+      color: black;
+    }
+    
+    .descripcionFooter img{
+        width: auto;
+        align-self: center;
+        padding-top: 20px;
+    }
+    
+    .redesBowie{
+        text-align: center;
+        grid-area: bowie;
+        font-size: 75px;
+        align-self: center;
+        
+    }
+    
+    .redesBowie p{
+        font-size: 36px;
+        color: black;
+    }
+    
+    .misRedes{
+        text-align: center;
+        grid-area: misRedes;
+        font-size: 75px;
+        align-self: center;
+    }
+    
+    .misRedes p{
+        font-size: 36px;
+    }
+
+    /*** Footer Fin ***/
+}
+
